@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<header>
+    <img class="header_logo" src="../img/Avatar-cropped.png" width=75> </img>
+    <h1 class="header_title"> UsrnGamesInc</h1>
+    <h2 class="header_catchphrase"> <br> Game Developer & Web Designer</h2>
+
+    <div class="header_tab-wrapper">
+        <a class="header_tab" href="../index.html">Unity: Completed Works</a>
+        <a class="header_tab" href="unity-scenes.html">Unity: Rendered Scenes</a>
+        <a class="header_tab" href="unity-systems-models.html">Unity: Systems & Models</a>
+        <a class="header_tab" href="unity-in-progress.html">Unity: In Progress</a>
+        <a class="header_tab" href="#">Web Development</a>
+        <a class="header_tab" href="contact-about.html">Contact & About</a>
+    </div>
+</header>
+
+<body>
+    <h1 class="body_title">
+        Web Development
+    </h1>
+
+    <section class="body_gallery" onmouseover="timerReset()">
+
+        <a class="body_gallery-prev" onclick="plusSlides(-1)">&#10094;</a>
+
+        <figure class="body_gallery-item-shown">
+            <p class=body_gallery-item-number>1/4</p>
+
+            <iframe class="body_gallery-item-img" src="https://about-me-pi-guy53.netlify.app" frameborder="0"
+                width="800" height="500"></iframe>
+
+            <figcaption class="body_gallery-item-caption">
+                <p>This was my first actual website, it is supposed to be an 'About Me' describing myself using a
+                    website. I did not want to put my name, and other personal(ish) information on a public webpage, so
+                    I used a persona. Meet Vearin Terril, a fictional character I created during world building. You may
+                    recognize him, and the world he's in, from some of my games.
+                </p>
+            </figcaption>
+        </figure>
+
+        <figure class="body_gallery-item-shown">
+            <p class=body_gallery-item-number>2/4</p>
+
+            <iframe class="body_gallery-item-img" src="https://theme-in-yellow-poem.netlify.app" frameborder="0"
+                width="800" height="500"></iframe>
+
+            <figcaption class="body_gallery-item-caption">
+                <p>Theme in Yellow is a webpage showcasing a poem I found. This was for my Web Dev II class. It shows a
+                    center justified left layout, and a slightly blurred, and darkened background, to make the text
+                    stand out better.
+                </p>
+            </figcaption>
+        </figure>
+
+        <figure class="body_gallery-item-shown">
+            <p class=body_gallery-item-number>3/4</p>
+
+            <iframe class="body_gallery-item-img" src="https://midterm2022-pi-guy53.netlify.app" frameborder="0"
+                width="800" height="500"></iframe>
+
+            <figcaption class="body_gallery-item-caption">
+                <p>This was my Web Dev I midterm website. Its supposed to be the website equivalent of a business card.
+                    I'm honestly not too happy with out it turned out, despite being made only last semester, it looks
+                    old, and dated. Some more color, and a tweaked layout might help make it look
+                    <a class="italics">better</a>.
+                </p>
+            </figcaption>
+        </figure>
+
+        <figure class="body_gallery-item-shown">
+            <p class=body_gallery-item-number>4/4</p>
+
+            <iframe class="body_gallery-item-img" src="https://jellyfish-poem.netlify.app" frameborder="0" width="800"
+                height="500"></iframe>
+
+            <figcaption class="body_gallery-item-caption">
+                <p>Yet another poem done for Web Dev II, this one about jellyfish. It uses a responsive layout, and
+                    light/dark themes. (not that these are apparent with the mostly dark background) I do like how the
+                    bright jellyfish 'pops' out of the dark background, complimenting the text.
+                </p>
+            </figcaption>
+        </figure>
+
+        <a class="body_gallery-next" onclick="plusSlides(1)">&#10095;</a>
+
+    </section>
+</body>
+
+<footer>
+    <div class="copy">
+        <hr>
+        &copy; 2023 UsrnGamesInc. All Rights Reserved
+    </div>
+
+    <script src="../app.js"></script>
+</footer>
+
+</html>

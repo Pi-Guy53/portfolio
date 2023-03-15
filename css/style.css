@@ -1,0 +1,170 @@
+:root {
+    --blue-100: 219 100% 20%;
+    --blue-200: 219 100% 30%;
+    --blue-300: 219 100% 50%;
+    --blue-400: 219 100% 86%;
+    --blue-500: 219 100% 95%;
+    --blue-600: 219 100% 98%;
+}
+
+* * {
+    /*border: 1px solid black;*/
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    padding: .5rem;
+
+    font-size: 14pt;
+    line-height: 26pt;
+}
+
+.header_logo {
+    grid-area: 1/1;
+    border-radius: 100px;
+    margin: 1rem;
+    border: 2px solid hsl(var(--blue-100));
+}
+
+.header_title {
+    grid-area: 1/2/1/5;
+}
+
+.header_catchphrase {
+    grid-area: 1/2/1/5;
+}
+
+.header_tab-wrapper {
+    grid-area: 2/1/2/20;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: .5rem;
+}
+
+.header_tab {
+    padding: .25rem;
+    text-align: center;
+
+    border: 3px ridge hsl(var(--blue-400));
+    border-radius: 10px;
+
+    color: hsl(var(--blue-100));
+}
+
+.header_tab:visited {
+    padding: .25rem;
+    text-align: center;
+
+    border: 3px ridge hsl(var(--blue-400));
+    border-radius: 10px;
+
+    color: hsl(var(--blue-100));
+}
+
+.header_tab:hover {
+    /*box-shadow: 0px 0px 10px hsl(var(--blue-300));*/
+    border: 3px groove hsl(var(--blue-400));
+    background-color: hsl(var(--blue-500));
+    border-radius: 10px;
+
+    transform: scale(1.075);
+}
+
+.copy {
+    text-align: center;
+    font-size: 10pt;
+    padding: 1rem;
+}
+
+body {
+    background-color: hsl(var(--blue-600));
+}
+
+.body_title {
+    text-align: center;
+}
+
+.body_gallery {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    align-items: center;
+}
+
+.body_gallery-next,
+.body_gallery-prev {
+    cursor: pointer;
+    font-size: 28pt;
+
+    text-align: center;
+
+    max-height: 50px;
+
+    color: hsl(var(--blue-100));
+}
+
+.body_gallery-next-clicked,
+.body_gallery-prev-clicked {
+    cursor: pointer;
+    font-size: 28pt;
+
+    text-align: center;
+
+    max-height: 50px;
+
+    color: hsl(var(--blue-400));
+}
+
+.body_gallery-item-shown {
+    border: 1px solid hsl(var(--blue-400));
+    border-top: 5px ridge hsl(var(--blue-400));
+    border-bottom: 5px groove hsl(var(--blue-400));
+    border-radius: 25px;
+
+    text-align: center;
+
+    max-width: 100%;
+
+    animation-name: transition;
+    animation-duration: 1s;
+}
+
+.body_gallery-item-hidden {
+
+    display: none;
+}
+
+.body_gallery-item-number {
+    text-align: left;
+    padding: 1rem;
+    font-size: 16pt;
+}
+
+.body_gallery-item-img {
+    padding: 1rem;
+    border-radius: 25px;
+
+    text-align: center;
+}
+
+.body_gallery-item-caption {
+    padding: 1rem;
+    font-size: 18pt;
+    text-align: center;
+}
+
+.italics {
+    font-style: italic;
+}
+
+@keyframes transition {
+    from {
+        -webkit-filter: opacity(0);
+    }
+
+    to {
+        -webkit-filter: opacity(1);
+    }
+}
