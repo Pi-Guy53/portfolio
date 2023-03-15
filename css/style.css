@@ -159,6 +159,17 @@ body {
     text-align: center;
 }
 
+.contact_body-statement
+{
+    text-align: center;
+}
+
+.contact_body-about
+{
+    text-align: center;
+    font-size: 16pt;
+}
+
 .italics {
     font-style: italic;
 }
