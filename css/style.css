@@ -146,6 +146,8 @@ body {
     padding: 1rem;
     border-radius: 25px;
 
+    max-width: 75%;
+
     text-align: center;
 }
 
