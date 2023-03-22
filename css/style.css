@@ -130,7 +130,7 @@ body {
     max-width: 100%;
 
     animation-name: transition;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 .body_gallery-item-hidden {
@@ -159,14 +159,18 @@ body {
     text-align: center;
 }
 
-.contact_body-statement
-{
+#contact-body {
     text-align: center;
 }
 
-.contact_body-about
-{
+.contact_body-statement {
     text-align: center;
+}
+
+.contact_body-about {
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
     font-size: 16pt;
 }
 
@@ -174,12 +178,22 @@ body {
     font-style: italic;
 }
 
+.experienceLogos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.experienceLogos img {
+    max-height: 45%;
+    text-align: center;
+}
+
 @keyframes transition {
-    from {
+    0% {
         -webkit-filter: opacity(0);
     }
 
-    to {
+    100% {
         -webkit-filter: opacity(1);
     }
 }
