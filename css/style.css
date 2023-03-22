@@ -85,6 +85,12 @@ body {
     background-color: hsl(var(--blue-600));
 }
 
+.body_desc
+{
+    text-align: center;
+    font-size: 24pt;
+}
+
 .body_title {
     text-align: center;
 }
@@ -150,6 +156,7 @@ body {
     border-radius: 25px;
 
     max-width: 75%;
+    max-height: 40rem;
 
     text-align: center;
 }
