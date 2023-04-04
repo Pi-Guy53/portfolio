@@ -8,6 +8,7 @@
     <title>UnitySystems</title>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-v3.png">
 </head>
 
 <header>
@@ -18,9 +19,10 @@
     <div class="header_tab-wrapper">
         <a class="header_tab" href="../index.html">Unity: Completed Works</a>
         <a class="header_tab" href="unity-scenes.html">Unity: Rendered Scenes</a>
-        <a class="header_tab" href="#">Unity: Systems & Models</a>
+        <a class="header_tab" id="currentTab" href="#">Unity: Systems & Models</a>
         <a class="header_tab" href="unity-in-progress.html">Unity: In Progress</a>
         <a class="header_tab" href="web-dev.html">Web Development</a>
+        <a class="header_tab" href="resume.html">Resumé</a>
         <a class="header_tab" href="contact-about.html">Contact & About</a>
     </div>
 </header>
@@ -30,7 +32,7 @@
         Unity: Systems & Models
     </h1>
 
-    <p class ="body_desc">
+    <p class="body_desc">
         Prototyped game systems, not full games, but parts therof. Also including 3d modeled assets.
     </p>
 
@@ -38,74 +40,81 @@
 
         <a class="body_gallery-prev" onclick="plusSlides(-1)">&#10094;</a>
 
-            <figure class="body_gallery-item-shown">
-                <p class=body_gallery-item-number>1/7</p>
-                <img class="body_gallery-item-img" src="../img/Systems-Models/arial-flight.png">
-                <figcaption class="body_gallery-item-caption">
-                    <p>
-                        A collection of UHC (United Human Colonies) Fighters, Bombers, Interceptors, light gunship, and a Fire Nation Airship
-                    </p>
-                </figcaption>
-            </figure>
+        <figure class="body_gallery-item-shown">
+            <p class=body_gallery-item-number>1/7</p>
+            <img class="body_gallery-item-img" src="../img/Systems-Models/arial-flight.png">
+            <figcaption class="body_gallery-item-caption">
+                <p>
+                    A collection of UHC (United Human Colonies) Fighters, Bombers, Interceptors, light gunship, and a
+                    Fire Nation Airship
+                </p>
+            </figcaption>
+        </figure>
 
-            <figure class="body_gallery-item-shown">
-                <p class=body_gallery-item-number>2/7</p>
-                <img class="body_gallery-item-img" src="../img/Systems-Models/AT-AT1.png">
-                <figcaption class="body_gallery-item-caption">
-                    <p>Just an AT-AT that I modeled for fun. Please don't sue me.
-                    </p>
-                </figcaption>
-            </figure>
+        <figure class="body_gallery-item-shown">
+            <p class=body_gallery-item-number>2/7</p>
+            <img class="body_gallery-item-img" src="../img/Systems-Models/AT-AT1.png">
+            <figcaption class="body_gallery-item-caption">
+                <p>Just an AT-AT that I modeled for fun. Please don't sue me.
+                </p>
+            </figcaption>
+        </figure>
 
-            <figure class="body_gallery-item-shown">
-                <p class=body_gallery-item-number>3/7</p>
-                <img class="body_gallery-item-img" src="../img/Systems-Models/combat-drone.png">
-                <figcaption class="body_gallery-item-caption">
-                    <p>
-                        Combat class defense drone designed for a game. Equipped with twin gatling guns, these are mid-weight combatants designed for front line fighting.
-                    </p>
-                </figcaption>
-            </figure>
+        <figure class="body_gallery-item-shown">
+            <p class=body_gallery-item-number>3/7</p>
+            <img class="body_gallery-item-img" src="../img/Systems-Models/combat-drone.png">
+            <figcaption class="body_gallery-item-caption">
+                <p>
+                    Combat class defense drone designed for a game. Equipped with twin gatling guns, these are
+                    mid-weight combatants designed for front line fighting.
+                </p>
+            </figcaption>
+        </figure>
 
-            <figure class="body_gallery-item-shown">
-                <p class=body_gallery-item-number>4/7</p>
-                <img class="body_gallery-item-img" src="../img/Systems-Models/drones.png">
-                <figcaption class="body_gallery-item-caption">
-                    <p>
-                        Featured top is a Mammoth Class Assault drone, Below is a standard Assault Class Drone. Assault drones of both types are designed as supiriority units. Providing heavy support, for other drones, or as a single heavy weapons platform.
-                    </p>
-                </figcaption>
-            </figure>
+        <figure class="body_gallery-item-shown">
+            <p class=body_gallery-item-number>4/7</p>
+            <img class="body_gallery-item-img" src="../img/Systems-Models/drones.png">
+            <figcaption class="body_gallery-item-caption">
+                <p>
+                    Featured top is a Mammoth Class Assault drone, Below is a standard Assault Class Drone. Assault
+                    drones of both types are designed as supiriority units. Providing heavy support, for other drones,
+                    or as a single heavy weapons platform.
+                </p>
+            </figcaption>
+        </figure>
 
-            <figure class="body_gallery-item-shown">
-                <p class=body_gallery-item-number>5/7</p>
-                <img class="body_gallery-item-img" src="../img/Systems-Models/missile-drone.png">
-                <figcaption class="body_gallery-item-caption">
-                    <p>
-                        Missile Class Defense Drone. Equipped with twin rocket/missile launchers, these are mid-range support units, designed to provide artillery support to their allied drones.
-                    </p>
-                </figcaption>
-            </figure>
+        <figure class="body_gallery-item-shown">
+            <p class=body_gallery-item-number>5/7</p>
+            <img class="body_gallery-item-img" src="../img/Systems-Models/missile-drone.png">
+            <figcaption class="body_gallery-item-caption">
+                <p>
+                    Missile Class Defense Drone. Equipped with twin rocket/missile launchers, these are mid-range
+                    support units, designed to provide artillery support to their allied drones.
+                </p>
+            </figcaption>
+        </figure>
 
-            <figure class="body_gallery-item-shown">
-                <p class=body_gallery-item-number>6/7</p>
-                <img class="body_gallery-item-img" src="../img/Systems-Models/patrol-drone.png">
-                <figcaption class="body_gallery-item-caption">
-                    <p>
-                        Patrol Class Defense Drone. Equipped with a light laser, these drones are only a threat in large numbers, but they can call in other drones to help, and provide alerts to their allies.
-                    </p>
-                </figcaption>
-            </figure>
+        <figure class="body_gallery-item-shown">
+            <p class=body_gallery-item-number>6/7</p>
+            <img class="body_gallery-item-img" src="../img/Systems-Models/patrol-drone.png">
+            <figcaption class="body_gallery-item-caption">
+                <p>
+                    Patrol Class Defense Drone. Equipped with a light laser, these drones are only a threat in large
+                    numbers, but they can call in other drones to help, and provide alerts to their allies.
+                </p>
+            </figcaption>
+        </figure>
 
-            <figure class="body_gallery-item-shown">
-                <p class=body_gallery-item-number>7/7</p>
-                <img class="body_gallery-item-img" src="../img/Systems-Models/power-armor.png">
-                <figcaption class="body_gallery-item-caption">
-                    <p>
-                        Mark VI Powered Armor, originally used by the AMSR (Advanced Millitary Space Reserves) This particular set is owned by Vearin Terril, and maintained by his VI T.A.V.A.
-                    </p>
-                </figcaption>
-            </figure>
+        <figure class="body_gallery-item-shown">
+            <p class=body_gallery-item-number>7/7</p>
+            <img class="body_gallery-item-img" src="../img/Systems-Models/power-armor.png">
+            <figcaption class="body_gallery-item-caption">
+                <p>
+                    Mark VI Powered Armor, originally used by the AMSR (Advanced Millitary Space Reserves) This
+                    particular set is owned by Vearin Terril, and maintained by his VI T.A.V.A.
+                </p>
+            </figcaption>
+        </figure>
 
         <a class="body_gallery-next" onclick="plusSlides(1)">&#10095;</a>
 

@@ -41,7 +41,7 @@ header {
     grid-area: 2/1/2/20;
 
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
 
     gap: .5rem;
 }
@@ -50,10 +50,14 @@ header {
     padding: .25rem;
     text-align: center;
 
+    font-size: 12pt;
+
     border: 3px ridge hsl(var(--blue-400));
     border-radius: 10px;
 
     color: hsl(var(--blue-100));
+
+    text-decoration: none;
 }
 
 .header_tab:visited {
@@ -64,6 +68,8 @@ header {
     border-radius: 10px;
 
     color: hsl(var(--blue-100));
+
+    text-decoration: none;
 }
 
 .header_tab:hover {
@@ -73,6 +79,11 @@ header {
     border-radius: 10px;
 
     transform: scale(1.075);
+}
+
+#currentTab {
+    color: hsl(var(--blue-200));
+    background-color: hsl(var(--blue-500));
 }
 
 .copy {
@@ -87,7 +98,7 @@ body {
 
 .body_desc {
     text-align: center;
-    font-size: 24pt;
+    font-size: 16pt;
 }
 
 .body_title {
@@ -105,13 +116,11 @@ body {
     max-width: 100%;
 }
 
-.body_gallery-next
-{
+.body_gallery-next {
     grid-column: 3/4;
 }
 
-.body_gallery-prev
-{
+.body_gallery-prev {
     grid-column: 1/2;
 }
 
@@ -208,8 +217,9 @@ body {
     text-align: center;
 }
 
-#contact-body {
-    text-align: center;
+#contact-shell {
+    display: grid;
+    justify-items: center;
 }
 
 .contact_body-statement {
@@ -221,6 +231,8 @@ body {
     padding-left: 5rem;
     padding-right: 5rem;
     font-size: 16pt;
+
+    max-width: 75%;
 }
 
 .italics {
@@ -229,12 +241,30 @@ body {
 
 .experienceLogos {
     display: grid;
+    max-width: 40rem;
+
     grid-template-columns: repeat(6, 1fr);
 }
 
 .experienceLogos img {
-    max-height: 45%;
+    height: 6rem;
     text-align: center;
+}
+
+#resume-shell {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding: 1rem;
+}
+
+#resume-body {
+    text-align: left;
+    grid-column: 2/3;
+}
+
+#resume-body-bottom {
+    text-align: left;
+    grid-column: 3/4;
 }
 
 @keyframes transitionIn {
